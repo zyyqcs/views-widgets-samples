@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="recycler_width">412dp</dimen>
+    <dimen name="recycler_margin">20dp</dimen>
+    <dimen name="item_width">60dp</dimen>
+    <dimen name="page_margin">50dp</dimen>
+</resources>

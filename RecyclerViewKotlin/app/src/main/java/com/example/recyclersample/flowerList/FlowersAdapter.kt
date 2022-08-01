@@ -21,6 +21,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.view.doOnLayout
+import androidx.core.view.marginLeft
+import androidx.core.view.marginRight
+import androidx.core.view.setPadding
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -61,7 +65,8 @@ class FlowersAdapter(private val onClick: (Flower) -> Unit) :
     /* Creates and inflates view and return FlowerViewHolder. */
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FlowerViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.flower_item, parent, false)
+                .inflate(R.layout.flower_item, parent, false)
+
         return FlowerViewHolder(view, onClick)
     }
 

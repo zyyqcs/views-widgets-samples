@@ -50,3 +50,13 @@ https://github.com/android/views-widgets
 
 Patches are encouraged, and may be submitted by forking this project and
 submitting a pull request through GitHub. Please see CONTRIBUTING.md for more details.
+
+
+###From zyyqcs
+--------------
+
+在RecyclerViewKotlin中，修改demo的界面，改为三列，左右50dp，列间距均分
+运行结果：
+![img.png](img.png)
+
+2022/8/1

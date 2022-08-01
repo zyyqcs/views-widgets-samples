@@ -19,24 +19,27 @@
 
     <ImageView
         android:id="@+id/flower_image"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_margin="8dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="0dp"
         android:contentDescription="@string/flower_image_content_description"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/flower_text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/flower_text"
+        app:layout_constraintTop_toTopOf="parent"
+       />
+
 
     <TextView
         android:id="@+id/flower_text"
-        android:layout_width="wrap_content"
+        android:layout_width="@+id/flower_image"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_margin="0dp"
+
         android:text="@string/flower1_name"
-        android:textAppearance="?attr/textAppearanceHeadline5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/flower_image"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textAppearance="?attr/textAppearanceHeadline6"
+
+        app:layout_constraintTop_toBottomOf="@+id/flower_image"
+        app:layout_constraintLeft_toLeftOf="@+id/flower_image"
+        app:layout_constraintRight_toRightOf="@+id/flower_image"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
